@@ -11,6 +11,7 @@ void setup(){
   if(test==LOW)
   {
    coin=1;
+   ledPins[0] = 1
   }
  }
  digitalWrite(LED_BUILTIN,0);
