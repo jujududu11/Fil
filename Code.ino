@@ -1,14 +1,12 @@
 
 void setup(){
- const int BP = 3;
- pinMode(BP, INPUT);
- int test = digitalRead(BP);
+ #define start 3
  int coin = 1;
  while(coin==0){
   digitalWrite(LED_BUILTIN,1);
   delay(1000); 
   digitalWrite(LED_BUILTIN,0);
-  test = digitalRead(BP);
+  test = start;
   if(test==LOW)
   {
    coin=1;
